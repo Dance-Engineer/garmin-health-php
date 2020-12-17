@@ -1,0 +1,16 @@
+{
+    "name": "dance-engineer/garmin-health-php",
+    "license": "MIT",
+    "keywords": [
+        "client"
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "league/oauth1-client": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "DanceEngineer\\GarminHealth\\": "src/"
+        }
+    }
+}
