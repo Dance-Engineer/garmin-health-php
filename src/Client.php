@@ -34,9 +34,9 @@ use RuntimeException;
 
 final class Client
 {
-    private const REGISTRATION_URL    = 'https://healthapi.garmin.com/wellness-api/rest/user/registration';
-    private const API_URL_BASE        = 'https://healthapi.garmin.com/wellness-api/rest/';
-    private const BACK_FILL_URL_BASE  = 'https://healthapi.garmin.com/wellness-api/rest/backfill/';
+    private const REGISTRATION_URL    = 'https://apis.garmin.com/wellness-api/rest/user/registration';
+    private const API_URL_BASE        = 'https://apis.garmin.com/wellness-api/rest/';
+    private const BACK_FILL_URL_BASE  = 'https://apis.garmin.com/wellness-api/rest/backfill/';
     private const BACK_FILL_DAY_RANGE = 90;
 
     public const DAILIES                     = 'dailies';
@@ -124,7 +124,7 @@ final class Client
                 return new $dataClass($item);
             }
         }
-        throw new RuntimeException('Unrecognized model');
+        throw new RuntimeException('Unrecognized model for ' . $url);
     }
 
     /**
