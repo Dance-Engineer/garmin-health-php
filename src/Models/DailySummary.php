@@ -124,6 +124,9 @@ class DailySummary extends BaseModel
         return $this->calendarDate;
     }
 
+    /**
+     * @return array{min: ?mixed, average: ?mixed, max: ?mixed, resting: ?mixed, samples: array<mixed>}
+     */
     public function heartRate(): array
     {
         return $this->heartRate;
